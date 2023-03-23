@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --font-family: 'Inter', sans-serif;
+
+
+    /* color variables */
+    --grey: #757575;
+    --light-black: #222222;
+    --black: #000000;
+    --blue: #00799E;
+    --orange: #EB7100;
+    --light-orange: #F7CA59;
+    --background: #F5F5F5;
+    --background-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.chegg__container{
+    width: fit-content;
+    margin: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.chegg__section-title {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--light-black);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.chegg__learn-more-btn {
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    gap: 0.5rem;
+}
+
+.chegg__main-section__finishing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chegg__main-section__finishing-text h3 {
+    margin-top: 46px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--light-black);
+}
+
+.chegg__main-section__finishing-text button {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--background-white);
+    background-color: var(--orange);
+    border: none;
+    padding: 10px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+/* ------------------------header----------------------- */
+
+.chegg__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chegg__nav-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5rem 10%;
+    position: relative;
+}
+
+.chegg__logo-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chegg__logo-section__logo {
+    height: 30px;
+}
+
+.chegg__navigation-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.chegg__navigation-links li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: var(--light-black);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chegg__navigation-links__drop-down {
+    height: 5.57px;
+    margin-left: 7px;
+}
+
+.chegg__login-section-links {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.chegg__login-section-links li {
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: var(--light-black);
+    border-right: 2px solid var(--grey);
+}
+
+.chegg__login-section-links li:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.chegg__search-box {
+    align-self: center;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.3rem;
+    border: 3px solid var(--light-orange);
+    border-radius: 4px;
+}
+
+.chegg__search-box input {
+    width: 250px;
+    flex: 2;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--grey);
+    padding: 1rem;
+    outline: none;
+    border: none;
+}
+
+.chegg__search-box button {
+    flex: 1;
+    padding: 10px;
+    height: fit-content;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 4px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.chegg__header-image {
+    margin-top: 1.8rem;
+    width: 100%;
+}
+
+.chegg__header-image img {
+    width: 100%;
+}
+
+/* ------------------for mobile menu section---------------------- */
+.chegg__for-mobile-view__menu{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #000000;
+}
+
+/* -------------------main---------------------------- */
+.chegg__main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.chegg__main-section__part-1 {
+    margin-top: 3rem;
+}
+
+.chegg__main-section__part-1__contents {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 384px));
+    justify-content: center;
+    gap: 24px;
+}
+
+.chegg__main-section__part-1__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 0px 0px 1px #999999;
+    border-radius: 10px;
+
+    padding-bottom: 2rem;
+}
+
+.chegg__main-section__part-1__content__image-container {
+    width: 100%;
+}
+
+.chegg__main-section__part-1__content__image-container img {
+    width: 100%;
+}
+
+.chegg__main-section__part-1__content h2 {
+    margin-top: 32px;
+    padding: 0 36px;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 38px;
+    color: var(--black);
+}
+
+.chegg__main-section__part-1__content p {
+    margin-top: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    padding: 0 42px;
+}
+
+.chegg__main-section__part-1__content button {
+    margin-top: 20px;
+}
+
+/* -------------------------main section part 2--------------------- */
+
+.chegg__main-section__part-2 {
+    margin-top: 166px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-white);
+}
+
+.chegg__main-section__part-2 h1 {
+    padding: 23px 5%;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--orange);
+}
+
+.chegg__main-section__part-2__contents {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 100px;
+    /* display: grid;
+    grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 126px; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.chegg__main-section__part-2__contents section {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.chegg__main-section__part-2__contents section:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.chegg__main-section__part-2__image-container {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chegg__main-section__part-2__image-container img {
+    width: 100%;
+}
+
+.chegg__main-section__part-2__content-text {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chegg__main-section__part-2__content-text h2 {
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 58px;
+    color: var(--light-black);
+}
+
+.chegg__main-section__part-2__content-text p {
+    margin-top: 27.5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--light-black);
+}
+
+.chegg__main-section__part-2__content-text button {
+    margin-top: 24px;
+}
+
+/* -------------------------main section part 3-------------------------- */
+
+.chegg__main-section__part-3 {
+    background-color: #FFF3F2;
+    margin: 100px auto 0 auto;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chegg__main-section__part-3 h1 {
+    margin-top: 68px;
+}
+
+.chegg__main-section__part-3 p {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: var(--light-black);
+}
+
+.chegg__main-section__part-3__content-navigators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin-top: 54px;
+}
+
+.chegg__main-section__part-3__content-navigators li {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    align-items: center;
+    color: var(--light-black);
+    cursor: pointer;
+}
+
+.chegg__main-section__part-3__contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 90px auto 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 24px;
+}
+
+.chegg__main-section__part-3__content {
+    flex: 1;
+    min-width: 220px;
+    background-color: var(--background-white);
+    padding-bottom: 32px;
+    border-radius: 10px;
+}
+
+.chegg__main-section__part-3__content img {
+    width: 100%;
+}
+
+.chegg__main-section__part-3__content h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--light-black);
+    margin-top: 32px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.chegg__main-section__part-3__content ul {
+    margin-top: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chegg__main-section__part-3__content ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--light-black);
+}
+
+/* -------------------------------main section part 4----------------------- */
+.chegg__main-section__part-4 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.chegg__main-section__part-4__image-container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 24px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.chegg__main-section__part-4__image-container__image img {
+    flex: 1;
+    width: 100%;
+}
+
+.chegg__main-section__part-4__content-text {
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+}
+
+.chegg__main-section__part-4__content-text ol {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal;
+    gap: 20px;
+}
+
+.chegg__main-section__part-4__content-text ol li {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--black);
+}
+
+/* -------------------------footer------------------------------ */
+
+.chegg__footer-part-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.chegg__footer-part-1__contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.chegg__footer-part-1__content {
+    margin-top: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.chegg__footer-part-1__content:first-child {
+    flex: 2;
+}
+
+.chegg__footer-part-1__content:first-child div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .chegg__footer-part-1__content:first-child div ul{
+    
+} */
+
+.chegg__footer-part-1__content-title {
+    margin-bottom: 8px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    color: #302C41;
+}
+
+.chegg__footer-part-1__content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 200px;
+    max-width: 1fr;
+}
+
+.chegg__footer-part-1__content ul li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #302C41;
+}
+
+/* ---------------------------footer part 2---------------------- */
+.chegg__footer-part-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--background-white);
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+
+.chegg__footer-part-2__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.chegg__footer-part-2__icon {
+    width: 30px;
+
+}
+
+.chegg__footer-part-2__icon img {
+    width: 100%;
+}
+
+.chegg__footer-part-2__download-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.chegg__footer-part-2__download-link {
+    width: 135px;
+}
+
+.chegg__footer-part-2__download-link img {
+    width: 100%;
+}
+
+/* ---------------------------footer part 3------------------------ */
+
+.chegg__footer-part-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.chegg__copyright-text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #534F63;
+}
+
+.chegg__footer-part-3 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.chegg__footer-part-3 ul li {
+    width: max-content;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    color: #302C41;
+}
+
+/* ------------------for mobile view------------------------ */
+
+.chegg__mobile-view__icons {
+    flex: 1;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    /* .chegg__for-mobile-view__menu{
+        display: none;
+    } */
+    .chegg__for-mobile-view__menu .chegg__login-section-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .chegg__for-mobile-view__menu .chegg__login-section-links li{
+        padding: 0;
+    }
+    .chegg__for-mobile-view__menu .chegg__navigation-links{
+        display: none;
+    }
+    .chegg__for-mobile-view__menu .chegg__login-section-links li{
+        border-right: none;
+    }
+    .chegg__mobile-view__icons {
+        display: flex;
+    }
+
+    .chegg__login-section-links {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    .chegg__for-mobile-view__menu .chegg__navigation-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .chegg__section-title {
+        font-size: 32px;
+    }
+
+    .chegg__navigation-links {
+        display: none;
+    }
+
+    .chegg__main-section__part-2 h1 {
+        font-size: 32px;
+    }
+
+    .chegg__footer-part-2 {
+        flex-direction: column;
+    }
+
+    .chegg__footer-part-3 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .chegg__search-box {
+        /* flex-wrap: nowrap; */
+        width: 100%;
+    }
+
+    .chegg__search-box input {
+        flex: 2;
+        width: 100%;
+    }
+
+    .chegg__main-section__part-1__content h2 {
+        font-size: 20px;
+    }
+
+    .chegg__main-section__part-2 h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .chegg__main-section__part-2__content-text h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .chegg__main-section__part-2__content-text p{
+        font-size: 18px;
+    }
+    .chegg__main-section__part-3__content h2 {
+        font-size: 24px;
+    }
+    .chegg__main-section__part-3__content-navigators {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+
+/* for animations */
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-3-23 9:54:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
