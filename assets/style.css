@@ -122,46 +122,109 @@ ul {
 }
 
 .chegg__navigation-links li {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.25px;
-    color: var(--light-black);
-
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+/* ---------------drop-down-contents start------------------------ */
+
 .chegg__drop-down-container{
     position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.chegg__navigation-links__drop-down {
+.chegg__drop-down-btn{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: var(--light-black);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.chegg__drop-down-btn::after{
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    background: var(--orange);
+    width: 0;
+    transition: 0.3s;
+}
+
+.chegg__drop-down-btn:hover::after{
+    width: 100%;
+    z-index: 2;
+}
+
+.chegg__navigation-links__drop-down-icon {
     height: 5.57px;
     margin-left: 7px;
-    cursor: pointer;
 }
 
 .chegg__drop-down-content{
-    width: 200px;
     z-index: 1;
     position: absolute;
-    top: 25px;
-    padding: 20px;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
+    top: 28px;
+    padding: 30px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 20px;
     background-color: var(--background-white);
     border-radius: 8px;
+    box-shadow: 0 -5px 10px rgb(186, 186, 186);
+}
+
+.chegg__drop-down-content div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid rgb(222, 222, 222);
+}
+
+.chegg__drop-down-content div:last-child{
+    border-right: none;
+}
+
+.chegg__drop-down-content div h2{
+    width: 200px;
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    padding: 15px 10px;
+    font-size: 16px;
 }
 
 .chegg__drop-down-content a{
+    width: 200px;
     color: rgb(34, 34, 34);
     font-weight: 400;
+    padding: 10px;
 }
 
+.chegg__drop-down-content a:hover {
+    color: blue;
+    font-weight: 600;
+}
+
+.chegg__drop-down-container:hover .chegg__drop-down-content{
+    display: flex;
+}
+
+/* -----------------drop-down-contents end-------------------------- */
 
 .chegg__login-section-links {
     flex: 1;
@@ -251,6 +314,45 @@ ul {
     background-color: #ffffff;
     box-shadow: 0 0 5px #000000;
     overflow-y: auto;
+}
+
+.chegg__for-mobile-view__menu .chegg__logo-section{
+    flex: none;
+    padding: 20px 10px;
+}
+
+.chegg__for-mobile-view__menu .chegg__navigation-links{
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.chegg__for-mobile-view__menu .chegg__navigation-links li{
+    width: 100%;
+}
+
+.chegg__for-mobile-view__menu .chegg__drop-down-container{
+    width: 100%;
+}
+
+.chegg__for-mobile-view__menu .chegg__drop-down-btn{
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.chegg__for-mobile-view__menu .chegg__drop-down-btn::after{
+    display: none;
+}
+
+.chegg__for-mobile-view__menu .chegg__drop-down-content {
+    width: 100%;
+    position:static;
+    flex-wrap: wrap;
+    box-shadow: none;
+}
+
+.chegg__for-mobile-view__menu .chegg__drop-down-content{
+    padding: 20px 0 0 0;
 }
 
 /* -------------------main---------------------------- */
