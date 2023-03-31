@@ -322,8 +322,10 @@ ul {
 }
 
 .chegg__for-mobile-view__menu .chegg__navigation-links{
+    padding-top: 50px;
     width: 100%;
     justify-content: flex-start;
+    gap: 20px;
 }
 
 .chegg__for-mobile-view__menu .chegg__navigation-links li{
@@ -337,7 +339,7 @@ ul {
 .chegg__for-mobile-view__menu .chegg__drop-down-btn{
     width: 100%;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .chegg__for-mobile-view__menu .chegg__drop-down-btn::after{
